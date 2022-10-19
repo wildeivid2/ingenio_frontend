@@ -13,10 +13,11 @@ export class SignupComponent implements OnInit {
   public user = {
     username : '',
     password : '',
-    nombre : '',
-    apellido : '',
     email : '',
-    telefono : ''
+    enabled: true,
+    roles: [
+      {authority: 'ROLE_USER'}
+    ]
   }
 
   constructor(private userService:UserService,private snack:MatSnackBar) { }
