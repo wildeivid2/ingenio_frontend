@@ -1,6 +1,6 @@
 import { Cliente } from './Cliente'
 import { Usuario } from './Usuario'
-import { Logisticas } from './Logistica'
+import { Logistica } from './Logistica'
 
 export class Pedido {
 
@@ -10,9 +10,9 @@ export class Pedido {
   totalEnvioNormal: number
   totalMontoDescuento: number
   totalEnvio: number
-  logisticas: Logisticas[]
+  logisticas: Logistica[]
 
-  constructor(id: number, cliente: Cliente, usuario: Usuario, totalEnvioNormal: number, totalMontoDescuento: number, totalEnvio: number, logisticas: Logisticas[]) {
+  constructor(id: number, cliente: Cliente, usuario: Usuario, totalEnvioNormal: number, totalMontoDescuento: number, totalEnvio: number, logisticas: Logistica[]) {
     this.id = id
     this.cliente = cliente
     this.usuario = usuario

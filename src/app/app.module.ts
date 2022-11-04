@@ -23,6 +23,7 @@ import { authInterceptorProviders } from './services/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
 import { PedidosComponent } from './pages/pedidos/pedidos.component';
+import { ClientesComponent } from './pages/clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { PedidosComponent } from './pages/pedidos/pedidos.component';
     HomeComponent,
     DashboardComponent,
     UserDashboardComponent,
-    PedidosComponent
+    PedidosComponent,
+    ClientesComponent
   ],
   imports: [
     BrowserModule,

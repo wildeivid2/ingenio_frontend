@@ -1,1 +1,22 @@
-<p>pedidos works!</p>
+<div class="card border-primary mb-3">
+  <div class="card-header">Pedidos</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Lista de Pedidos</h5>
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>vendedor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pedido of pedidos;">
+          <td><a class="text-decoration-none" [routerLink]="['/pedidos', pedido.id]">{{ pedido.id }}</a></td>
+          <td>{{ pedido.usuario.username }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
